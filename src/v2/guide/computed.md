@@ -230,7 +230,7 @@ var watchExampleVM = new Vue({
         this.answer = 'Questions usually contain a question mark. ;-)'
         return
       }
-      this.answer = 'Thinking...'
+      else this.answer = 'Thinking...'
       var vm = this
       axios.get('https://yesno.wtf/api')
         .then(function (response) {
